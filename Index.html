@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Byte</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="top-menu">
+        <svg id="logo" width="53" height="71" viewBox="0 0 53 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M8.57812 70V70.5H9.07812L31.1875 70.5L31.1915 70.5C37.7143 70.4474 42.8143 69.001 46.4231 66.0924C50.0564 63.1641 51.8438 58.8645 51.8438 53.2812C51.8438 49.9863 50.9714 47.1673 49.2031 44.8542C47.7246 42.891 45.776 41.4914 43.3748 40.6519C45.4213 39.6356 47.0736 38.2101 48.3199 36.3746L48.3215 36.3723C49.8137 34.1475 50.5547 31.5879 50.5547 28.7109C50.5547 23.4759 48.7163 19.4473 45.0008 16.7076C41.3109 13.9609 35.9524 12.625 29 12.625H9.07812H8.57812V13.125V70ZM35.7648 24.7317L35.7647 24.7318L35.7725 24.7376C37.1123 25.7309 37.8359 27.3998 37.8359 29.8828C37.8359 32.0722 37.1402 33.6538 35.8074 34.7165C34.453 35.7964 32.3658 36.4014 29.4644 36.4531H21.2969V23.1172H29C32.1905 23.1172 34.4115 23.6871 35.7648 24.7317ZM30.8359 60.0859H21.2969V45.7344H31.5355C34.1554 45.7729 36.0309 46.4335 37.2534 47.6324C38.4734 48.8288 39.125 50.642 39.125 53.1641C39.125 55.3565 38.3928 57.0317 36.9574 58.2518C35.5399 59.4529 33.5214 60.0859 30.8359 60.0859Z"
+                stroke="black" />
+            <path
+                d="M0.578125 58V58.5H1.07812L23.1875 58.5L23.1915 58.5C29.7143 58.4474 34.8143 57.001 38.4231 54.0924C42.0564 51.1641 43.8438 46.8645 43.8438 41.2812C43.8438 37.9863 42.9714 35.1673 41.2031 32.8542C39.7246 30.891 37.776 29.4914 35.3748 28.6519C37.4213 27.6356 39.0736 26.2101 40.3199 24.3746L40.3215 24.3723C41.8137 22.1475 42.5547 19.5879 42.5547 16.7109C42.5547 11.4759 40.7163 7.44727 37.0008 4.70762C33.3109 1.96087 27.9524 0.625 21 0.625H1.07812H0.578125V1.125V58ZM27.7648 12.7317L27.7647 12.7318L27.7725 12.7376C29.1123 13.7309 29.8359 15.3998 29.8359 17.8828C29.8359 20.0722 29.1402 21.6538 27.8074 22.7165C26.453 23.7964 24.3658 24.4014 21.4644 24.4531H13.2969V11.1172H21C24.1905 11.1172 26.4115 11.6871 27.7648 12.7317ZM22.8359 48.0859H13.2969V33.7344H23.5355C26.1554 33.7729 28.0309 34.4335 29.2534 35.6324C30.4734 36.8288 31.125 38.642 31.125 41.1641C31.125 43.3565 30.3928 45.0317 28.9574 46.2518C27.5399 47.4529 25.5214 48.0859 22.8359 48.0859Z"
+                stroke="white" />
+        </svg>
+
+        <!-- <a class="navbar-brand" href="#"><span class="spin">N</span>avbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-link active" href="#">What we offer <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#section2">Benifit</a>
+                <a class="nav-link" href="#">How it work</a>
+                <a class="nav-link" href="#">Support</a>
+                <a class="nav-link" href="#">Testmonial</a>
+            </div>
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0 getstart" type="button">Get Started</button>
+    </nav>
+
+    <div>
+        <div class="col-sm-6 col-md-12 col-xs-6 row section2">
+            <div class="col-sm-6 col-md-6 float-left col-xs-12">
+                <h1 data-aos="fade-left" class="headingone mb-0">Unlimited design interface <br> in your business
+                    </br>
+                    <p class="text-muted h5" style="margin-top: 20px; line-height: 25px;">Lorem ipsum dolor sit, amet
+                        consectetur
+                        adipisicing elit. Quas neque eligendi earum, rerum perferendis deleniti!</p>
+                </h1>
+                <button type="button" class="btn strtbtn btn-danger">Getting Started</button>
+            </div>
+            <div class="col-sm-6 col-md-6 col-xs-12 float-right image-container">
+                <img src="./assets/bg.jpg" class="img-fluid image1" />
+            </div>
+        </div>
+
+        <blockquote class="blockquote mx-auto">
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+        <div class="col-sm-6 col-md-12 col-xs-6 row section2" id="section2">
+            <div class="col-sm-6 col-md-6 float-left col-xs-12">
+                <h1 data-aos="fade-right" class="headingone mb-0">Unlimited design interface <br> in your business
+                    </br>
+                    <p class="text-muted h5" style="margin-top: 20px; line-height: 25px;">Lorem ipsum dolor sit, amet
+                        consectetur
+                        adipisicing elit. Quas neque eligendi earum, rerum perferendis deleniti!</p>
+                </h1>
+                <button type="button" class="btn strtbtn btn-danger">Getting Started</button>
+            </div>
+            <div class="col-sm-6 col-md-6 col-xs-12 float-right image-container">
+                <img src="./bg.jpg" class="img-fluid image1" data-aos="zoom-in" />
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.navbar-nav a').on('click', function () {
+        $('.navbar-nav a').removeClass('active');
+        $(this).addClass('active');
+    });
+    $(".getstart").click(function () {
+        $(".getstart").css("outline", "none");
+    })
+</script>
+<script>
+    function fadein() {
+        $("#top-menu").addClass("fade-in");
+    }
+</script>
+
+<script>
+    AOS.init({
+        duration: 1200,
+    })
+</script>
+
+</html>

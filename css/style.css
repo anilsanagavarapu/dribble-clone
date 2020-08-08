@@ -1,0 +1,171 @@
+body{
+    background-color: #1b191d;
+    font-family: 'Varela Round', sans-serif;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #1b191d !important;
+}
+.collapse{
+    color: white !important;
+}
+.navbar-toggler{
+    background-color: rgb(255, 96, 38) !important;
+    border-color: transparent !important;
+}
+.navbar-toggler:hover{
+    border-color: transparent !important;
+}
+.navbar-brand{
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+.nav-link , .navbar-brand{
+    color: white !important;
+    /* transition: all 1s ease-in-out !important; */
+}
+.nav-link{
+    margin: 0 30px !important;
+}
+.navbar-nav a{
+    transition:  ease-in-out .3s !important;
+}
+.navbar-nav a:hover{
+    transition:  ease-in-out .3s !important;
+    color: rgb(255, 96, 38) !important;
+}
+.active{
+    color: rgb(255, 96, 38) !important;
+    
+}
+.getstart{
+    background-color: rgb(255, 96, 38) !important;
+     border-color: transparent; 
+     color: white;
+     transition:  ease-in-out .4s !important;
+}
+.getstart:hover{
+    transition:  ease-in-out .4s !important;
+    color: rgb(255, 96, 38) !important;
+    background-color: white !important;
+    border-color: transparent !important;
+    outline: none;
+}
+.getstart:focus{
+    border-color: transparent !important;
+    outline: none;
+}
+.section2{
+    margin-top: 50px !important;
+}
+.headingone{
+   
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 55px !important;
+    font-family: 'montserrat', sans-serif;
+    position: relative;
+    text-align: left;
+    top: 60px;
+    left: 150px !important;
+}
+.image1{
+    height:450px !important;
+    border-radius: 10px;
+    margin-left: 50% !important;
+}
+
+.navbar-brand:hover span{
+    animation: rotating 2s linear infinite;
+    transform-style: preserve-3d;
+   display: inline-block;
+}
+@keyframes rotating {  
+    from 
+    {
+        transform-style: preserve-3d;
+        transform-origin: initial;
+         transform: rotateY(0deg); 
+         
+    }
+    to 
+    {
+        transform-style: preserve-3d;
+         transform: rotateY(360deg); 
+
+    }
+}
+#logo{
+    animation: fill-1 5s ease forwards;
+    animation: fill-2 5s ease forwards;
+
+}
+#logo path:nth-child(1) {
+    stroke-dasharray: 548px;
+    stroke-dashoffset: 548px;
+    animation: line-anim 5s ease forwards;
+}
+#logo path:nth-child(2) {
+    stroke-dasharray: 548px;
+    stroke-dashoffset: 548px;
+    animation: line-anim 5s ease forwards 2500ms;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-1 {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: red;
+    }
+}
+@keyframes fill-2 {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: rgb(255, 96, 38);
+    }
+}
+.strtbtn{
+    position: relative !important;
+    left: 25% !important;
+    top: 75px !important;
+    background-color: rgb(255, 96, 38) !important;
+    border-color: transparent !important;
+    transition: .3s ease-in-out;
+}
+.strtbtn:hover{
+    background-color: white !important;
+    color: rgb(255, 96, 38);
+    transition: .3s ease-in-out;
+}
+/* @media all (min-width: ) */
+.fade-in{
+    animation: fadein 2s ease-in;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
